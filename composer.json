@@ -1,0 +1,16 @@
+{
+    "name": "gpmd/ss-bootstrap",
+    "description": "Twitter Bootstrap theme for Silverstripe 3",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "stability": "dev",
+    "authors": [
+        {
+            "name": "Matt Bailey",
+            "email": "matt@gpmd.co.uk"
+        }
+    ],
+    "require": {
+
+    }
+}
