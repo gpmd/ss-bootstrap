@@ -1,1 +1,54 @@
-
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
+.input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.typography{}.typography p{margin:0 0 10px;}
+.typography .lead{margin-bottom:20px;font-size:21px;font-weight:200;line-height:30px;}
+.typography small{font-size:85%;}
+.typography strong{font-weight:bold;}
+.typography em{font-style:italic;}
+.typography cite{font-style:normal;}
+.typography .muted{color:#999999;}
+.typography .text-warning{color:#c09853;}
+.typography a.text-warning:hover{color:#a47e3c;}
+.typography .text-error{color:#b94a48;}
+.typography a.text-error:hover{color:#953b39;}
+.typography .text-info{color:#3a87ad;}
+.typography a.text-info:hover{color:#2d6987;}
+.typography .text-success{color:#468847;}
+.typography a.text-success:hover{color:#356635;}
+.typography h1,.typography h2,.typography h3,.typography h4,.typography h5,.typography h6{margin:10px 0;font-family:inherit;font-weight:bold;line-height:20px;color:inherit;text-rendering:optimizelegibility;}.typography h1 small,.typography h2 small,.typography h3 small,.typography h4 small,.typography h5 small,.typography h6 small{font-weight:normal;line-height:1;color:#999999;}
+.typography h1,.typography h2,.typography h3{line-height:40px;}
+.typography h1{font-size:38.5px;}
+.typography h2{font-size:31.5px;}
+.typography h3{font-size:24.5px;}
+.typography h4{font-size:17.5px;}
+.typography h5{font-size:14px;}
+.typography h6{font-size:11.9px;}
+.typography h1 small{font-size:24.5px;}
+.typography h2 small{font-size:17.5px;}
+.typography h3 small{font-size:14px;}
+.typography h4 small{font-size:14px;}
+.typography .page-header{padding-bottom:9px;margin:20px 0 30px;border-bottom:1px solid #eeeeee;}
+.typography ul,.typography ol{padding:0;margin:0 0 10px 25px;}
+.typography ul ul,.typography ul ol,.typography ol ol,.typography ol ul{margin-bottom:0;}
+.typography li{line-height:20px;}
+.typography ul.unstyled,.typography ol.unstyled{margin-left:0;list-style:none;}
+.typography dl{margin-bottom:20px;}
+.typography dt,.typography dd{line-height:20px;}
+.typography dt{font-weight:bold;}
+.typography dd{margin-left:10px;}
+.typography .dl-horizontal{*zoom:1;}.typography .dl-horizontal:before,.typography .dl-horizontal:after{display:table;content:"";line-height:0;}
+.typography .dl-horizontal:after{clear:both;}
+.typography .dl-horizontal dt{float:left;width:160px;clear:left;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.typography .dl-horizontal dd{margin-left:180px;}
+.typography hr{margin:20px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
+.typography abbr[title],.typography abbr[data-original-title]{cursor:help;border-bottom:1px dotted #999999;}
+.typography abbr.initialism{font-size:90%;text-transform:uppercase;}
+.typography blockquote{padding:0 0 0 15px;margin:0 0 20px;border-left:5px solid #eeeeee;}.typography blockquote p{margin-bottom:0;font-size:16px;font-weight:300;line-height:25px;}
+.typography blockquote small{display:block;line-height:20px;color:#999999;}.typography blockquote small:before{content:'\2014 \00A0';}
+.typography blockquote.pull-right{float:right;padding-right:15px;padding-left:0;border-right:5px solid #eeeeee;border-left:0;}.typography blockquote.pull-right p,.typography blockquote.pull-right small{text-align:right;}
+.typography blockquote.pull-right small:before{content:'';}
+.typography blockquote.pull-right small:after{content:'\00A0 \2014';}
+.typography q:before,.typography q:after,.typography blockquote:before,.typography blockquote:after{content:"";}
+.typography address{display:block;margin-bottom:20px;font-style:normal;line-height:20px;}

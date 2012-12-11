@@ -1,14 +1,14 @@
 <div id="Content" class="searchResults">
-    <h1>$Title</h1>
-
+    <div class="page-header">
+        <h1>$Title</h1>
+    </div>
     <% if $Query %>
-        <p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
+    <p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
     <% end_if %>
-
     <% if $Results %>
-    <ul id="SearchResults">
+    <div id="SearchResults">
         <% loop $Results %>
-        <li>
+        <div class="well">
             <h4>
                 <a href="$Link">
                     <% if $MenuTitle %>
@@ -19,34 +19,33 @@
                 </a>
             </h4>
             <% if $Content %>
-                <p>$Content.LimitWordCountXML</p>
+            <p>$Content.LimitWordCountXML</p>
             <% end_if %>
             <a class="readMoreLink" href="$Link" title="Read more about &quot;{$Title}&quot;">Read more about &quot;{$Title}&quot;...</a>
-        </li>
+        </div>
         <% end_loop %>
-    </ul>
+    </div>
     <% else %>
     <p>Sorry, your search query did not return any results.</p>
     <% end_if %>
-
     <% if $Results.MoreThanOnePage %>
     <div id="PageNumbers">
         <div class="pagination">
-            <% if $Results.NotFirstPage %>
-            <a class="prev" href="$Results.PrevLink" title="View the previous page">&larr;</a>
-            <% end_if %>
-            <span>
+            <ul>
+                <% if $Results.NotFirstPage %>
+                <li><a href="$Results.PrevLink" title="Previous">&larr;</a></li>
+                <% end_if %>
                 <% loop $Results.Pages %>
-                    <% if $CurrentBool %>
-                    $PageNum
-                    <% else %>
-                    <a href="$Link" title="View page number $PageNum" class="go-to-page">$PageNum</a>
-                    <% end_if %>
+                <% if $CurrentBool %>
+                <li class="active"><span>$PageNum</span></li>
+                <% else %>
+                <li><a href="$Link" title="Page $PageNum">$PageNum</a></li>
+                <% end_if %>
                 <% end_loop %>
-            </span>
-            <% if $Results.NotLastPage %>
-            <a class="next" href="$Results.NextLink" title="View the next page">&rarr;</a>
-            <% end_if %>
+                <% if $Results.NotLastPage %>
+                <li><a href="$Results.NextLink" title="Next">&rarr;</a></li>
+                <% end_if %>
+            </ul>
         </div>
         <p>Page $Results.CurrentPage of $Results.TotalPages</p>
     </div>
