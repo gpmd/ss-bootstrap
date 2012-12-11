@@ -1,5 +1,82 @@
 /*
  * Form
  *
- * Required to override SilverStripe's default form.css file
+ * Don't remove this file, it's required to override SilverStripe's default
+ * form.css from loading
+ *
+ * Some styles have been added below to work with the User Defined Forms module.
+ * However, the markup is completely different so you'll need to do some of your
+ * own work ;)
  */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import "../bootstrap/less/variables.less";
+@import "../bootstrap/less/mixins.less";
+@import "../bootstrap/less/forms.less";
+@import "../bootstrap/less/buttons.less";
+@import "../bootstrap/less/wells.less";
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+// Pull in Bootstrap core button styling
+.Actions {
+    .form-actions;
+    input { .btn; }
+    input[type="submit"] { .btn-primary; }
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+// Layout
+form[id^="Form_"] {
+    .field { .control-group; }
+}
+
+// Labels
+label.right { .help-block; }
+
+// Radios and checkboxes
+input[type="radio"],
+input[type="checkbox"] {
+    float: left;
+    margin-top: 0 !important;
+    margin-left: -20px;
+}
+
+// Option sets
+.optionset {
+    margin-left: 0 !important;
+    list-style: none;
+    li {
+        label {
+            // Indent the labels to position radios/checkboxes as hanging
+            min-height: @baseLineHeight; // clear the floating input if there is no label text
+            padding-left: 20px;
+        }
+    }
+}
+
+// Messages
+label.required,
+input.required,
+select.required,
+textarea.required { color: @errorText; }
+
+input.required,
+select.required,
+textarea.required {
+    border-color: @errorText !important;
+    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)) !important; // Redeclare so transitions work
+    &:focus {
+        border-color: darken(@errorText, 10%) !important;
+        @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@errorText, 20%);
+        .box-shadow(@shadow) !important;
+    }
+}

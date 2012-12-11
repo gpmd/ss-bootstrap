@@ -14,7 +14,7 @@
 
 
 /* ==========================================================================
-   Navbar
+   Navbar - extending Bootstrap's default styling for SS
    ========================================================================== */
 
 // Active nav items
@@ -28,8 +28,6 @@
 }
 
 // Inverted navbar
-// -------------------------
-
 .navbar-inverse {
     .nav .current > a,
     .nav .current > a:hover,
@@ -37,4 +35,33 @@
         color: @navbarInverseLinkColorActive;
         background-color: @navbarInverseLinkBackgroundActive;
     }
+}
+
+/* ==========================================================================
+   Navs
+   ========================================================================== */
+
+// Redeclaring due to specificity issues
+.nav-list {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+
+// Redeclaring due to specificity issues
+.breadcrumb {
+    padding: 8px 15px !important;
+    margin: 0 0 @baseLineHeight !important;
+    margin-left: 0 !important;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .breadcrumb { margin-left: @baseLineHeight !important; }
+}
+@media (min-width: 1200px) {
+    .breadcrumb { margin-left: @baseLineHeight * 1.5 !important; }
 }

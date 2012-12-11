@@ -1,5 +1,5 @@
 <% if $Level(2) %>
-<ul class="breadcrumb span12">
+<ul class="breadcrumb">
     $Breadcrumbs
 </ul>
 <% end_if %>
