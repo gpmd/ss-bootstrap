@@ -1,7 +1,8 @@
 /*
  * Main
  *
- * This file contains additions/overrides to the Twitter Bootstrap css
+ * This file contains additions/overrides for the Bootstrap css
+ * and supplementary styles for the SS3 blog and comments module
  */
 
 /* ==========================================================================
@@ -11,6 +12,9 @@
 // Core variables and mixins
 @import "../bootstrap/less/variables.less";
 @import "../bootstrap/less/mixins.less";
+@import "../bootstrap/less/labels-badges.less";
+@import "../bootstrap/less/forms.less";
+@import "../bootstrap/less/buttons.less";
 
 
 /* ==========================================================================
@@ -34,6 +38,19 @@
     .nav .current > a:focus {
         color: @navbarInverseLinkColorActive;
         background-color: @navbarInverseLinkBackgroundActive;
+    }
+}
+
+// Search
+#SearchForm_SearchForm {
+    input[type="text"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input[type="submit"] {
+        padding: 5px 12px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
@@ -64,4 +81,125 @@
 }
 @media (min-width: 1200px) {
     .breadcrumb { margin-left: @baseLineHeight * 1.5 !important; }
+}
+
+/* ==========================================================================
+   Contact us form
+   ========================================================================== */
+
+#contact-us {
+    form[id^="Form_"] {
+        input[type="text"],
+        input[type="email"],
+        textarea { .input-xxlarge; }
+    }
+}
+
+/* ==========================================================================
+   Silverstripe blog module
+   ========================================================================== */
+
+/* Blog holder
+   ========================================================================== */
+
+/* Layout */
+.blogSummary { margin-bottom: @baseLineHeight * 1.5; }
+
+/* Blog entry
+   ========================================================================== */
+
+/* Layout */
+.blogEntry { margin-bottom: @baseLineHeight * 1.5; }
+.edit-post {
+    padding-top: 0;
+    margin-bottom: @baseLineHeight * 1.5 !important;
+}
+
+/* Meta */
+.authorDate { margin-bottom: 0 !important; }
+.tags { margin-bottom: @baseLineHeight !important; }
+
+/* Tag cloud widget */
+.tagcloud {
+    .not-popular { font-size: @baseFontSize * 0.6; }
+    .not-very-popular { font-size: @baseFontSize * 0.8; }
+    .somewhat-popular { font-size: @baseFontSize; }
+    .popular { font-size: @baseFontSize * 1.2; }
+    .very-popular { font-size: @baseFontSize * 1.4; }
+    .ultra-popular { font-size: @baseFontSize * 1.6; }
+}
+
+/* Buttons */
+.edit-post,
+.commenting-rss-feed {
+    a {
+        .btn;
+        .btn-small;
+        &#editpost { .btn-primary; }
+        &#unpublishpost { .btn-danger; }
+    }
+}
+
+/* Comments module
+   ========================================================================== */
+
+/* Typography */
+#comments-holder {
+    h4 {
+        margin-bottom: @baseLineHeight;
+        font-size: @baseFontSize * 1.75;
+    }
+}
+
+/* Form */
+#Form_CommentsForm {
+    margin-bottom: @baseLineHeight * 1.5;
+    input[type="text"],
+    input[type="email"],
+    textarea { .input-xxlarge; }
+}
+
+/* Comments */
+.comments-list {
+    margin-left: 0 !important;
+    list-style: none;
+    li { margin-bottom: @baseLineHeight * 1.5; }
+    .action-links {
+        margin-left: 0 !important;
+        list-style: none;
+        li {
+            .ie7-inline-block();
+            display: inline-block;
+            margin-bottom: 0 !important;
+            a {
+                .btn;
+                .btn-small;
+                &.spam { .btn-warning; }
+                &.delete { .btn-danger; }
+            }
+        }
+    }
+}
+
+/* Widgets
+   ========================================================================== */
+
+.WidgetHolder {
+    margin-bottom: @baseLineHeight;
+    ul {
+        margin-left: 0;
+        list-style: none;
+    }
+}
+
+.subscribeLink { .btn; }
+
+/* Labels and badges
+   ========================================================================== */
+
+a[rel="tag"] {
+    // Pull in default Bootstrap label styling
+    .label;
+    // Set background colour to @infoText
+    background-color: @infoText;
 }

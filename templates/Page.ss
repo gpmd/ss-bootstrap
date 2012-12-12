@@ -22,7 +22,7 @@
 
         <script src="$ThemeDir/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
+    <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" id="$URLSegment">
         <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -30,7 +30,7 @@
         <% include Navigation %>
         <div class="container">
             <% include Header %>
-            <div class="typography<% if $Menu(2) %> row<% end_if %>" role="main">
+            <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %> row<% end_if %>" role="main">
                 <% include Breadcrumbs %>
                 $Layout
             </div>
