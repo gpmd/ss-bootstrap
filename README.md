@@ -7,7 +7,7 @@ It supports (hopefully) everything [Simple](//github.com/silverstripe-themes/sil
 ## Instructions
 1. Copy the `ss-bootstrap` folder into your `themes` folder
 2. Either add `SSViewer::set_theme('ss-bootstrap');` to your `_config.php` file
-3. Or log in to Admin, go to *Settings* and select *ss-bootstrap* from the dropdown menu
+3. Or log in to Admin, go to **Settings** and select **ss-bootstrap** from the dropdown menu
 
 Make sure you run a `?flush=all` afterwards, plus a `/dev/build` if you've installed any new modules.
 
