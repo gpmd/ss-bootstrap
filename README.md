@@ -18,9 +18,6 @@ If you need help using Bootstrap or Boilerplate check out their websites:
 * Bootstrap: [twitter.github.com/bootstrap](//twitter.github.com/bootstrap/)
 * Boilerplate: [html5boilerplate.com](//html5boilerplate.com/)
 
-## Support
-You're having a laugh aren't you?... ;)
-
 ## License
 Needless to say this is provided 'as is'. Please do with it as you will - have fun! [Bootstrap](https://github.com/twitter/bootstrap/blob/master/LICENSE) and [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.md) have their own licenses.
 
