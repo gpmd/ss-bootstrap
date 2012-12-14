@@ -1,6 +1,6 @@
 # SS Bootstrap
 
-Yet another [Bootstrap](//twitter.github.com/bootstrap/)/[Boilerplate](//html5boilerplate.com/) base theme for [SilverStripe 3](//www.silverstripe.org/).
+Yet another [Bootstrap](http://twitter.github.com/bootstrap/)/[Boilerplate](http://html5boilerplate.com/) base theme for [SilverStripe 3](http://www.silverstripe.org/).
 
 It supports (hopefully) everything [Simple](//github.com/silverstripe-themes/silverstripe-simple), the default SS3 theme, does. I've also added some basic styling/support for the [Blog](//github.com/silverstripe/silverstripe-blog) module.
 
@@ -16,12 +16,12 @@ You'll probably also want to enable search: `FulltextSearchable::enable();`
 
 If you need help using Bootstrap or Boilerplate check out their websites:
 
-* Bootstrap: [twitter.github.com/bootstrap](//twitter.github.com/bootstrap/)
-* Boilerplate: [html5boilerplate.com](//html5boilerplate.com/)
+* Bootstrap: [twitter.github.com/bootstrap](http://twitter.github.com/bootstrap/)
+* Boilerplate: [html5boilerplate.com](http://html5boilerplate.com/)
 
 ## To Do
 
-* Create a demo site (for now, just check out [Bootstrap](//twitter.github.com/bootstrap/))
+* Create a demo site (for now, just check out [Bootstrap](http://twitter.github.com/bootstrap/))
 
 ## License
 
@@ -29,4 +29,4 @@ Needless to say this is provided 'as is'. Please do with it as you will - have f
 
 ## Made by...
 
-[@_mattbailey](//twitter.com/_mattbailey) at [GPMD](//www.gpmd.co.uk/).
+[@_mattbailey](http://twitter.com/_mattbailey) at [GPMD](http://www.gpmd.co.uk/).
