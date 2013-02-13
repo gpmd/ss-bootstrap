@@ -38,7 +38,7 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="$themedir/js/vendor/jquery-1.6.2.min.js"><\\/script>')</script>
+        <script>window.jQuery || document.write('<script src="$themedir/js/vendor/jquery-1.8.3.min.js"><\\/script>')</script>
         <!-- Use Requirements::combine_files with these JS includes when you go live! -->
         <script src="$ThemeDir/bootstrap/js/jquery.js"></script>
         <script src="$ThemeDir/bootstrap/js/bootstrap-transition.js"></script>
