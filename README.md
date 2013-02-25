@@ -1,6 +1,6 @@
 # SS Bootstrap
 
-Yet another [Bootstrap](http://twitter.github.com/bootstrap/)/[Boilerplate](http://html5boilerplate.com/) base theme for [SilverStripe 3](http://www.silverstripe.org/).
+Another [Bootstrap](http://twitter.github.com/bootstrap/)/[Boilerplate](http://html5boilerplate.com/) base theme for [SilverStripe 3](http://www.silverstripe.org/).
 
 It supports (hopefully) everything [Simple](//github.com/silverstripe-themes/silverstripe-simple), the default SS3 theme, does. I've also added some basic styling/support for the [Blog](//github.com/silverstripe/silverstripe-blog) module.
 
