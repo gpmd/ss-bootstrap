@@ -1,8 +1,8 @@
 {
     "name": "gpmd/ss-bootstrap",
-    "description": "Twitter Bootstrap theme for Silverstripe 3",
+    "description": "Twitter Bootstrap / HTML5 Boilerplate theme for Silverstripe 3",
     "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme"],
+    "keywords": ["gpmd", "silverstripe", "theme", "twitter bootstrap", "twitter", "bootstrap", "html5 boilerplate", "html5", "boilerplate"],
     "stability": "dev",
     "authors": [
         {
