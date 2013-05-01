@@ -37,10 +37,9 @@
             <% include Footer %>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="$themedir/js/vendor/jquery-1.8.3.min.js"><\\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="$themedir/js/vendor/jquery-1.9.1.min.js"><\\/script>')</script>
         <!-- Use Requirements::combine_files with these JS includes when you go live! -->
-        <script src="$ThemeDir/bootstrap/js/jquery.js"></script>
         <script src="$ThemeDir/bootstrap/js/bootstrap-transition.js"></script>
         <script src="$ThemeDir/bootstrap/js/bootstrap-alert.js"></script>
         <script src="$ThemeDir/bootstrap/js/bootstrap-modal.js"></script>
@@ -53,8 +52,8 @@
         <script src="$ThemeDir/bootstrap/js/bootstrap-collapse.js"></script>
         <script src="$ThemeDir/bootstrap/js/bootstrap-carousel.js"></script>
         <script src="$ThemeDir/bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="$ThemeDir/js/plugins-min.js"></script>
-        <script src="$ThemeDir/js/main-min.js"></script>
+        <script src="$ThemeDir/js/plugins.min.js"></script>
+        <script src="$ThemeDir/js/main.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

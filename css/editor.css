@@ -4,7 +4,7 @@
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:20px;color:#333333;background-color:#ffffff;}
 a{color:#0088cc;text-decoration:none;}
-a:hover{color:#005580;text-decoration:underline;}
+a:hover,a:focus{color:#005580;text-decoration:underline;}
 .img-rounded{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
 .img-polaroid{padding:4px;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.2);-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);}
 .img-circle{-webkit-border-radius:500px;-moz-border-radius:500px;border-radius:500px;}
@@ -15,14 +15,18 @@ a:hover{color:#005580;text-decoration:underline;}
 .typography em{font-style:italic;}
 .typography cite{font-style:normal;}
 .typography .muted{color:#999999;}
+.typography a.muted:hover,.typography a.muted:focus{color:#808080;}
 .typography .text-warning{color:#c09853;}
-.typography a.text-warning:hover{color:#a47e3c;}
+.typography a.text-warning:hover,.typography a.text-warning:focus{color:#a47e3c;}
 .typography .text-error{color:#b94a48;}
-.typography a.text-error:hover{color:#953b39;}
+.typography a.text-error:hover,.typography a.text-error:focus{color:#953b39;}
 .typography .text-info{color:#3a87ad;}
-.typography a.text-info:hover{color:#2d6987;}
+.typography a.text-info:hover,.typography a.text-info:focus{color:#2d6987;}
 .typography .text-success{color:#468847;}
-.typography a.text-success:hover{color:#356635;}
+.typography a.text-success:hover,.typography a.text-success:focus{color:#356635;}
+.typography .text-left{text-align:left;}
+.typography .text-right{text-align:right;}
+.typography .text-center{text-align:center;}
 .typography h1,.typography h2,.typography h3,.typography h4,.typography h5,.typography h6{margin:10px 0;font-family:inherit;font-weight:bold;line-height:20px;color:inherit;text-rendering:optimizelegibility;}.typography h1 small,.typography h2 small,.typography h3 small,.typography h4 small,.typography h5 small,.typography h6 small{font-weight:normal;line-height:1;color:#999999;}
 .typography h1,.typography h2,.typography h3{line-height:40px;}
 .typography h1{font-size:38.5px;}
@@ -40,6 +44,7 @@ a:hover{color:#005580;text-decoration:underline;}
 .typography ul ul,.typography ul ol,.typography ol ol,.typography ol ul{margin-bottom:0;}
 .typography li{line-height:20px;}
 .typography ul.unstyled,.typography ol.unstyled{margin-left:0;list-style:none;}
+.typography ul.inline,.typography ol.inline{margin-left:0;list-style:none;}.typography ul.inline>li,.typography ol.inline>li{display:inline-block;*display:inline;*zoom:1;padding-left:5px;padding-right:5px;}
 .typography dl{margin-bottom:20px;}
 .typography dt,.typography dd{line-height:20px;}
 .typography dt{font-weight:bold;}
@@ -51,7 +56,7 @@ a:hover{color:#005580;text-decoration:underline;}
 .typography hr{margin:20px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
 .typography abbr[title],.typography abbr[data-original-title]{cursor:help;border-bottom:1px dotted #999999;}
 .typography abbr.initialism{font-size:90%;text-transform:uppercase;}
-.typography blockquote{padding:0 0 0 15px;margin:0 0 20px;border-left:5px solid #eeeeee;}.typography blockquote p{margin-bottom:0;font-size:16px;font-weight:300;line-height:25px;}
+.typography blockquote{padding:0 0 0 15px;margin:0 0 20px;border-left:5px solid #eeeeee;}.typography blockquote p{margin-bottom:0;font-size:17.5px;font-weight:300;line-height:1.25;}
 .typography blockquote small{display:block;line-height:20px;color:#999999;}.typography blockquote small:before{content:'\2014 \00A0';}
 .typography blockquote.pull-right{float:right;padding-right:15px;padding-left:0;border-right:5px solid #eeeeee;border-left:0;}.typography blockquote.pull-right p,.typography blockquote.pull-right small{text-align:right;}
 .typography blockquote.pull-right small:before{content:'';}
